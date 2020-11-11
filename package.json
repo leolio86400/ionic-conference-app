@@ -11,7 +11,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "webdriver-manager update --standalone false --gecko false"
+    "postinstall": "webdriver-manager update --standalone false --gecko false",
+    "ionic:build-android": "ionic cordova build android",
+    "ionic:build-ios": "ionic cordova build ios"
   },
   "repository": {
     "type": "git",
@@ -86,7 +88,9 @@
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
       "cordova-plugin-statusbar": {},
       "cordova-plugin-ionic-keyboard": {}
     }
